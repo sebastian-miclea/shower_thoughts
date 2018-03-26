@@ -1,24 +1,20 @@
-# README
+# Shower Thoughts
+## Setup
+Install dependencies:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+    bundle
 
-Things you may want to cover:
+You first need to setup the database and create a client:
 
-* Ruby version
+    rake db:setup
 
-* System dependencies
+##  Running
+Start the rails server
 
-* Configuration
+    rails s
+With the server running you need to make a POST call to **refresh_token/[client_id]** with the ID you received when setting up the database
 
-* Database creation
+After you have a valid token, you can create calls to 
+- GET **/thoughts** to get latest shower thoughts
+- PATCH **/thoughts** to force update the posts
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
