@@ -16,5 +16,5 @@ With the server running you need to make a POST call to **refresh_token/[client_
 
 After you have a valid token, you can create calls to 
 - GET **/thoughts** to get latest shower thoughts
-- PATCH **/thoughts** to force update the posts
+- PATCH **/thoughts** to force update the thoughts
 
