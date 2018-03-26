@@ -1,0 +1,1 @@
+PostsLoaderJob.perform_later
